@@ -12,5 +12,7 @@ public interface BloodBankService {
 		public List<BloodBank> findAll();
 		
 		public Optional<BloodBank> findOne(int ID);
+		
+		public Optional<BloodBank> findByEmailIdAndPassword(String Email_ID, String Password);
 
 }

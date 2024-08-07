@@ -5,7 +5,7 @@ import com.app.entity.PlasmaInBloodBank;
 
 public interface PlasmaInBloodBankService {
 
-public PlasmaInBloodBank save(PlasmaInBloodBank plasmainbloodbank);
+    public PlasmaInBloodBank save(PlasmaInBloodBank plasmainbloodbank);
 	
 	public void delete(PlasmaInBloodBank plasmainbloodbank);
 	

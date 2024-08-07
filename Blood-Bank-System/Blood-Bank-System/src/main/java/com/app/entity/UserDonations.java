@@ -16,10 +16,7 @@ public class UserDonations {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int ID;
-//	@Column(name="userID")
-//	private int UserId;
-//	@Column(name="Blood_Bank_ID")
-//	private int BloodBankID;
+
 	@Column(name="Numbers")
 	private int Numbers;
 	

@@ -51,6 +51,16 @@ public class User {
 	private Date LastDonationDate;
 	
 	
+	public BloodGroup getBloodgroups() {
+		return bloodgroups;
+	}
+
+
+	public void setBloodgroups(BloodGroup bloodgroups) {
+		this.bloodgroups = bloodgroups;
+	}
+
+
 	public User() {
 		super();
 	}
