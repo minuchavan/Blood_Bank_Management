@@ -47,4 +47,12 @@ public class BloodInBloodBankServiceImplementation implements BloodInBloodBankSe
 		
 	}
 
+	@Override
+	public void updateBloodQuantity(int number, int ID) {
+		bloodinbloodbankrepository.updateBloodQuantity(number, ID);
+		
+	}
+
+	
+
 }

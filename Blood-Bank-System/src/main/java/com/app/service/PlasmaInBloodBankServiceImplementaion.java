@@ -35,4 +35,22 @@ public class PlasmaInBloodBankServiceImplementaion implements PlasmaInBloodBankS
 		return plasmainbloodbankrepository.findById(ID);
 	}
 
+	@Override
+	public List<PlasmaInBloodBank> findPlasmabyBloodBankId(int blood_bank_id) {
+		
+		return plasmainbloodbankrepository.findPlasmabyBloodBankId(blood_bank_id);
+	}
+
+	@Override
+	public void insertPlasmaInBloodBank(int blood_bank_id, int blood_group_id, int number) {
+		plasmainbloodbankrepository.insertPlasmaInBloodBank(blood_bank_id, blood_group_id, number);
+		
+	}
+
+	@Override
+	public void updatePlasmaQuantity(int number, int ID) {
+		plasmainbloodbankrepository.updatePlasmaQuantity(number, ID);
+		
+	}
+
 }

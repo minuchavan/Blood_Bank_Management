@@ -21,6 +21,7 @@ public interface BloodInBloodBankService {
 	
 	public List<BloodInBloodBank>findBloodbyBloodBankId(int blood_bank_id);
 	
-	public  void insertBloodInBloodBank(@Param("blood_bank_id") int bloodBankId, @Param("blood_groupID") int bloodType, @Param("number") int quantity);
-	
+	public  void insertBloodInBloodBank(@Param("blood_bank_id") int blood_bank_id, @Param("blood_groupID") int blood_groupID, @Param("number") int number);
+
+	public void updateBloodQuantity(@Param("number") int number, @Param("ID") int ID);
 }

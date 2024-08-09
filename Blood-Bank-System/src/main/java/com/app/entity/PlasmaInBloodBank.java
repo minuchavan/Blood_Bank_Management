@@ -10,7 +10,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="plasmainBloodBanks")
+@Table(name="plasmain_blood_banks")
 public class PlasmaInBloodBank {
 
 	
