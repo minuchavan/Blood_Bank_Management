@@ -1,0 +1,34 @@
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.profile-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.profile-table th, .profile-table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.profile-table th {
+    background-color: #f2f2f2;
+    width: 30%;
+}
+
+.profile-table td {
+    width: 70%;
+}
+
+h1 {
+    text-align: center;
+}

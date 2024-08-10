@@ -73,6 +73,7 @@ public class BloodBankController {
 		}
 		HttpSession session = req.getSession();
 		session.setAttribute("user",bloodbank.get());
+		session.setAttribute("userType", 2);
 		return ResponseEntity.ok("Login Successfull...");
 	}
 

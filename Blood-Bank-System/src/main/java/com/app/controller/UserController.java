@@ -57,7 +57,7 @@ public class UserController {
 		return ResponseEntity.ok().build();
 	}
 	
-	@PutMapping("/user")
+	@PostMapping("/user-update")
 	public User updateUser(@RequestBody User theUser) {
 		userservice.save(theUser);
 		return theUser;
@@ -89,7 +89,14 @@ public class UserController {
 //	    }
 	
 	
-	
+	@GetMapping("/user/{id}")
+	public User getUser(@PathVariable("id") int id){
+		Optional<User>  user= userservice.findOne(id);
+		if(!user.isPresent()) {
+			return null;
+		}
+		return user.get();
+	}
 	
 	
 	@PostMapping("/login")
@@ -100,6 +107,7 @@ public class UserController {
 		}
 		HttpSession session = req.getSession();
 		session.setAttribute("user",user.get());
+		session.setAttribute("userType", 1);
 		return ResponseEntity.ok("Login Successfull...");
 	}
 
