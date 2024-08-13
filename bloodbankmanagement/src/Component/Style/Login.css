@@ -28,6 +28,7 @@ opacity: .95;
 .overlay{
   position: relative;
 
+
 }
 
 
@@ -54,6 +55,7 @@ form .con {
     flex-wrap: wrap;
    
       margin: 0 auto;
+     
 }
 
 /* the header form form */

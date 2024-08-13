@@ -9,91 +9,105 @@
     
   } */
   
-  code {
+  /* code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
+  } */
+  
+  .container-signupbloodbank{
+   display: flex;
+    width: 68%;
+    margin: 50px auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    /* background-color: #9cbdd0; */
+    box-shadow: 3px 3px 5px 6px;
+    padding: 28px;
+    position: relative;
+    border-radius: 25px 25px 25px 25px;
+    height: 300px;
+    overflow: hidden;
+   
+   
+   
   }
-  .user-left{
+  .bloodbankheading{
+    text-align: center;
+    position: relative;
+    left: 42%;
+  }
+
+  .form-left{
+    /* background-color: pink; */
     position: relative;
     top: 50px;
     right: 80px;
     height: 80%;
   }
-
-  .user-right{
+  .form-right{
+    /* background-color: rgb(144, 144, 230); */
     position: relative;
     top: 50px;
     right: 70px;
+    
   }
   
-  .container-signup{
-    display: flex;
-    width: 70%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    background-color: #9cbdd0;
-    box-shadow: 3px 3px 5px 6px;
-    padding: 30px;
-    position: relative;
-    border-radius: 25px 25px 25px 25px;
-    overflow: hidden;
-   
-   
-  }
-  
-  .container-signup h1{
+  .container-signupbloodbank h1{
     font-size: 36px;
     color: rgb(2, 2, 139);
     font-weight: 600;
     text-align: center;
-    position: relative;
-    left: 45%;
+  }
+  .bloodbankinput{
+   position: relative;
+   width: 90%;
+   border: none;
+   padding: 5px;
+   top: 15px;
   }
   
-  .container-signup input{
+  .input-bloodbank{
   
-    width: 90%;
+    width: 70%;
     font-size: 18px;
-    padding: 10px;
+    padding: 4px;
     border: none;
     border-radius: 2px;
-    background-color: rgb(233, 232, 232);
+    /* background-color: rgb(233, 232, 232); */
     margin-top: 10px;
-   
-  }
+    text-align: left;
+ }
   
-  .container-signup button{
+  .container-signupbloodbank button{
      width: 140px;
      height: 40px;
      border-radius: 4px;
      background-color: rgb(2, 2, 100);
      color: white;
      border: none;
-     margin-top: 32px;
-     font-size: 20px;
+    font-size: 20px;
      cursor: pointer;
-     position: relative;
-     bottom: 30px;
+     margin-top: 5px;
+    
   }
 
-.container-signup .input label{
-   
-    
-    
-    padding-right: 50px;
+.container-signupbloodbank .input-bloodbank label{
+     padding-right: 50px;
     font-size: 17px;
     font-weight: 600;
+   
   
 }
 
 .account{
 
     position: relative;
-     top: -20px;
-     bottom: 10px;
+    top: -12px;
+    left: 50px;
    
 }
+
+
 
 
   

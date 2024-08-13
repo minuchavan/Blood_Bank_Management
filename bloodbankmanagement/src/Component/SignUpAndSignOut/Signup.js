@@ -41,39 +41,51 @@ export const Signup = () => {
         </h3>
        
         <h1>Sign Up</h1>
+        <div className='user-left'>
         
         <div className='input'>
            
             <label>Enter Your First Name :</label>
             <input type='text' placeholder='First Name ' name='firstname' value={inputData.firstname}  onChange={handleInputs} required/>
-             
+         </div>
+         <div className='input'>    
              <label >Enter Your Last Name :</label>
             <input type='text' placeholder='Last Name 'name='lastname'  value={inputData.lastname} onChange={handleInputs} required/>
-             
+        </div>
+        <div className='input'>
             <label>Enter Your Birth Date :</label>
             <input type='date' placeholder='Birth Date'name='birthdate'  value={inputData.birthdate} onChange={handleInputs} required/>
-           
+         </div>  
+         <div className='input'>
             <label> Enter Mobile Number :</label>
             <input type='text' placeholder='Mobile Number'name='mobilenumber' value={inputData.mobilenumber}  onChange={handleInputs} required/>
-           
+         </div>
+         </div>
+         <div className='user-right'>
+         <div className='input'>  
             <label>Enter Your Email_Id :</label>
             <input type='email' placeholder='Email ID' name='emailid' value={inputData.emailid} onChange={handleInputs} required/>
+        </div>
            
+
+           
+         <div className='input'>
            <label>Enter Your Password :</label>
            <input type='password'placeholder='Password' name='password' value={inputData.password} onChange={handleInputs} required/>
-        
+        </div>
+        <div className='input'>
             <label>Blood Group Name : </label>
             <input type='text' placeholder='Blood Group Type 'name='bloodgrouptype'  value={inputData.bloodgrouptype} onChange={handleInputs} required/>
-           
+         </div>
+         <div className='input'>  
             <label>Last Donation Date  : </label>
             <input type='date' placeholder='Last Donation Date ' name='lastdonationdate' value={inputData.lastdonationdate} onChange={handleInputs} required/>
-            
-          </div>
+         </div>
         <button>Signup</button>
         <div className='account'>
         <p>Already have an account? <a href="/login">Login here</a></p>
         </div>
-       
+        </div>
 
       </form>
     )

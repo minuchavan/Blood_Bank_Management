@@ -13,12 +13,32 @@ import Profile from './Component/Profile';
 import Header from './Component/Navigation/Header';
 import HomePage from './Component/Home/Home';
 import ContactPage from './Component/Home/ContactPage';
+import BloodInBloodBank from './Component/BloodBank/BloodInBloodBank';
+import { useEffect, useState } from 'react';
+import http from './Component/axiosHandler';
+import BloodBankProfile from './Component/BloodBankProfile';
+import { BloodBankSignUp } from './Component/SignUpAndSignOut/BloodBankSignUp';
+import AddDonor from './Component/BloodBank/AddDonor';
+import UpdateBloodandPlasma from './Component/BloodBank/UpdateBloodandPlasma';
+
 
 
 function App() {
+
+  const [userType,setUserType]=useState(0);
+  useEffect(()=>{
+    http.get("/user-usertype")
+      .then((res) => {
+        setUserType(res.data);
+        console.log(res.data);
+      })
+      .catch((error) => {
+        console.error(error.message);
+      });
+  },[])
   return (
     <div>
-      <Header/>
+      <Header userType={userType}/>
       <Router>
       <div className="App">
         <Routes>
@@ -26,10 +46,16 @@ function App() {
           <Route path="/Login" element={<Login/>} />
           <Route path="/Contact" element={<ContactPage/>} />
           <Route path="/signup" element={<Signup/>} />
+          <Route path="/bloodbanksignup" element={< BloodBankSignUp/>}/>
           <Route path='/Profile/:id' element={<Profile/>}/> 
+          {/* <Route path='/bloodbankProfile/:ID' element={<BloodBankProfile/>}/>  */}
           <Route path="/dashboard" element={ <DashBoard/>} />
           <Route path="/about" element={<About/>} />
+          <Route path="/adddonor" element={<AddDonor/>} />
           <Route path="/bloodbank" element={<BloodBank/>} />
+          <Route path="/updatebloodandbank" element={<UpdateBloodandPlasma/>} />
+          <Route path="/bloodbankprofile/:ID" element={<BloodBankProfile/>} />
+          <Route path="/bloodbankdetail/:id" element={<BloodInBloodBank/>} />
           {/* <Route path="/editBloodBank/:id" element={<BloodBankList/>} />
           <Route path="/addBloodBank" element={<BloodBankList/>} /> */}
 

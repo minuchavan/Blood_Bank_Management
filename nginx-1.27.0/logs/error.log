@@ -1,1 +1,3 @@
 2024/08/10 14:44:22 [notice] 2408#34992: signal process started
+2024/08/11 04:10:09 [alert] 45272#25112: the event "ngx_master_45272" was not signaled for 5s
+2024/08/11 04:10:09 [alert] 45272#25112: could not respawn worker
